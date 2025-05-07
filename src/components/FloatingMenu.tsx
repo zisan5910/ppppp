@@ -393,7 +393,7 @@ export const LiveChat = () => {
 
   return (
     <div
-      className="fixed bottom-6 right-6 flex flex-col items-end gap-2"
+      className="fixed bottom-6 right-6 flex flex-col items-end gap-2 z-[9999]"
       ref={containerRef}
     >
       {/* Email Button - Animated */}
@@ -454,7 +454,7 @@ export const LiveChat = () => {
       {/* Chat Window */}
       {isChatOpen && (
         <motion.div
-          className="fixed bottom-5 right-6 w-100 max-w-[calc(101vw-3rem)] bg-white rounded-lg shadow-xl z-50 flex flex-col max-h-[440px]"
+          className="fixed bottom-5 right-6 w-100 max-w-[calc(101vw-3rem)] bg-white rounded-lg shadow-xl z-[9999] flex flex-col max-h-[440px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
